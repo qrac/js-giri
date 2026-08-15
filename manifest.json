@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "JS斬り",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "現在のサイトのJavaScriptをワンクリックで斬ります。",
   "minimum_chrome_version": "120",
   "permissions": [
