@@ -62,24 +62,6 @@ button:disabled {
   opacity: 0.6;
 }
 
-dl {
-  margin: 0;
-}
-
-dl div {
-  display: flex;
-  gap: 16px;
-}
-
-dt {
-  width: 8rem;
-}
-
-dd {
-  margin: 0;
-}
-
 .plain-list li + li {
   margin-top: 6px;
 }
-

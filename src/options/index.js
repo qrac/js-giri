@@ -4,15 +4,12 @@ const list = /** @type {HTMLUListElement | null} */ (document.querySelector("#si
 const emptyMessage = /** @type {HTMLParagraphElement | null} */ (
   document.querySelector("#empty-message")
 );
-const ruleCount = /** @type {HTMLElement | null} */ (document.querySelector("#rule-count"));
 
 if (!(list instanceof HTMLUListElement)) throw new Error("site-list is missing");
 if (!(emptyMessage instanceof HTMLParagraphElement)) throw new Error("empty-message is missing");
-if (!(ruleCount instanceof HTMLElement)) throw new Error("rule-count is missing");
 
 const siteList = /** @type {HTMLUListElement} */ (list);
 const noSitesMessage = /** @type {HTMLParagraphElement} */ (emptyMessage);
-const ruleCountOutput = /** @type {HTMLElement} */ (ruleCount);
 
 /** @param {string[]} hostnames */
 function renderSites(hostnames) {
@@ -44,17 +41,7 @@ function renderSites(hostnames) {
 }
 
 async function initialize() {
-  const loadRules = async () => {
-    const response = await fetch(chrome.runtime.getURL("src/rules/block-rules.json"));
-    return response.json();
-  };
-  const [hostnames, rules] = await Promise.all([
-    getCutHostnames(),
-    loadRules(),
-  ]);
-
-  renderSites(hostnames);
-  ruleCountOutput.textContent = Array.isArray(rules) ? String(rules.length) : "0";
+  renderSites(await getCutHostnames());
 }
 
 void (async () => {

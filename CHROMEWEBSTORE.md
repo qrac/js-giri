@@ -5,7 +5,7 @@
 ## Store Listing
 
 - Extension Name: JS斬り
-- Short Description: 現在のサイトのJavaScriptをワンクリックで斬り、少数の既知広告・トラッカー通信を遮断します。
+- Short Description: 現在のサイトのJavaScriptをワンクリックで斬ります。
 - Category: Productivity
 - Single Purpose: 現在のホスト名のJavaScriptをユーザー操作で無効化・復元する。
 - Primary Language: Japanese
@@ -14,7 +14,7 @@
 
 JS斬りは、現在表示しているサイトのJavaScriptをワンクリックで無効化・復元できる小さなChrome拡張です。
 
-対象は現在の正確なホスト名だけです。設定画面では対象サイトの確認と個別解除ができます。あわせて、同梱したごく少数の既知広告・トラッカー通信を遮断します。
+対象は現在の正確なホスト名だけです。設定画面では対象サイトの確認と個別解除ができます。
 
 ページ本文やDOMは読み取りません。閲覧履歴、Telemetry、Analyticsを収集せず、外部サーバーへデータを送信しません。
 
@@ -34,7 +34,6 @@ JS斬りは、現在表示しているサイトのJavaScriptをワンクリッ�
 | `storage` | JS斬り自身が無効化したhostnameだけを端末内で管理し、安全に解除するため。 |
 | `tabs` | タブ切り替え・ページ遷移時に現在のhostnameを確認し、タブごとのアイコン状態を正しく表示するため。ページ本文は読み取らない。 |
 | `contextMenus` | 拡張アイコンの右クリックメニューに設定ページへの入口を1つ表示するため。 |
-| `declarativeNetRequest` | 拡張に同梱した2件の静的ルールで既知広告・トラッカー通信を遮断するため。 |
 
 `host_permissions` は使用しない。
 
