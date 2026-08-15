@@ -12,7 +12,7 @@ export async function getCutHostnames() {
 }
 
 /**
- * contentSettingsには個別ruleの削除APIがないため、JS斬りのruleを一旦clearし、
+ * contentSettingsには個別ruleの削除APIがないため、JS切りのruleを一旦clearし、
  * ローカル管理している残りのhostnameだけを再設定する。
  * @param {string[]} hostnames
  */
@@ -29,7 +29,7 @@ async function applyCutHostnames(hostnames) {
 }
 
 /**
- * JS斬りが管理するhostname一覧を置換する。
+ * JS切りが管理するhostname一覧を置換する。
  * @param {string[]} hostnames
  */
 export async function replaceCutHostnames(hostnames) {
@@ -45,7 +45,7 @@ export async function removeCutHostname(hostname) {
 }
 
 /**
- * タブのhostnameに対するJS斬りを反転してタブを再読み込みする。
+ * タブのhostnameに対するJS切りを反転してタブを再読み込みする。
  * @param {chrome.tabs.Tab} tab
  * @returns {Promise<"cut" | "normal" | "unsupported">}
  */
@@ -63,4 +63,3 @@ export async function toggleJavaScriptForTab(tab) {
   await chrome.tabs.reload(tab.id);
   return isCut ? "normal" : "cut";
 }
-

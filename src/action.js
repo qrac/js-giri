@@ -30,7 +30,7 @@ export async function updateActionForTab(tab) {
       title: isCut
         ? "このサイトのJavaScriptを元に戻す"
         : hostname
-          ? "このサイトのJavaScriptを斬る"
+          ? "このサイトのJavaScriptを切る"
           : "このページでは使用できません",
     }),
     isCut || hostname

@@ -1,18 +1,18 @@
-# Chrome Web Store Listing — JS斬り
+# Chrome Web Store Listing — JS切り
 
 > Last Updated: 2026-08-15
 
 ## Store Listing
 
-- Extension Name: JS斬り
-- Short Description: 現在のサイトのJavaScriptをワンクリックで斬ります。
+- Extension Name: JS切り
+- Short Description: 現在のサイトのJavaScriptをワンクリックで切ります。
 - Category: Productivity
 - Single Purpose: 現在のホスト名のJavaScriptをユーザー操作で無効化・復元する。
 - Primary Language: Japanese
 
 ### Detailed Description
 
-JS斬りは、現在表示しているサイトのJavaScriptをワンクリックで無効化・復元できる小さなChrome拡張です。
+JS切りは、現在表示しているサイトのJavaScriptをワンクリックで無効化・復元できる小さなChrome拡張です。
 
 対象は現在の正確なホスト名だけです。設定画面では対象サイトの確認と個別解除ができます。
 
@@ -30,7 +30,7 @@ JS斬りは、現在表示しているサイトのJavaScriptをワンクリッ�
 | Permission | Justification |
 | --- | --- |
 | `contentSettings` | ユーザーがアイコンを押したホスト名のJavaScriptを無効化し、再操作または設定画面からその変更を削除するため。 |
-| `storage` | JS斬り自身が無効化したhostnameだけを端末内で管理し、安全に解除するため。 |
+| `storage` | JS切り自身が無効化したhostnameだけを端末内で管理し、安全に解除するため。 |
 | `tabs` | タブ切り替え・ページ遷移時に現在のhostnameを確認し、タブごとのアイコン状態を正しく表示するため。ページ本文は読み取らない。 |
 | `contextMenus` | 拡張アイコンの右クリックメニューに設定ページへの入口を1つ表示するため。 |
 

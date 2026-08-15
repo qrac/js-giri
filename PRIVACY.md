@@ -1,12 +1,12 @@
-# JS斬り Privacy Policy
+# JS切り Privacy Policy
 
 最終更新日: 2026-08-14
 
-JS斬りは Telemetry、Analytics、外部APIを使用せず、外部サーバーへデータを送信しません。
+JS切りは Telemetry、Analytics、外部APIを使用せず、外部サーバーへデータを送信しません。
 
 ## 保存する情報
 
-JS斬りがJavaScriptを無効化したサイトの **hostnameのみ** を `chrome.storage.local` で端末内に保存します。この情報は設定画面で表示し、JS斬り自身が追加したJavaScript設定を安全に解除するためだけに使います。解除時または拡張の削除時に削除されます。
+JS切りがJavaScriptを無効化したサイトの **hostnameのみ** を `chrome.storage.local` で端末内に保存します。この情報は設定画面で表示し、JS切り自身が追加したJavaScript設定を安全に解除するためだけに使います。解除時または拡張の削除時に削除されます。
 
 以下は収集・保存しません。
 
@@ -19,4 +19,3 @@ JS斬りがJavaScriptを無効化したサイトの **hostnameのみ** を `chro
 データを第三者と共有・販売することはありません。Cookie、Cloud Sync、第三者サービス、リモート設定も使用しません。
 
 この方針を変更する場合は、この文書と更新日を変更します。問い合わせはリポジトリのIssuesを利用してください。
-

@@ -1,5 +1,5 @@
 /**
- * URLからJS斬りの対象となる正規化済みhostnameを返す。
+ * URLからJS切りの対象となる正規化済みhostnameを返す。
  * @param {string | undefined} value
  * @returns {string | null}
  */

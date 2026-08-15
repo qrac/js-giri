@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "JS斬り",
+  "name": "JS切り",
   "version": "1.0.0",
-  "description": "現在のサイトのJavaScriptをワンクリックで斬ります。",
+  "description": "現在のサイトのJavaScriptをワンクリックで切ります。",
   "minimum_chrome_version": "120",
   "permissions": [
     "contentSettings",
@@ -15,7 +15,7 @@
     "type": "module"
   },
   "action": {
-    "default_title": "このサイトのJavaScriptを斬る",
+    "default_title": "このサイトのJavaScriptを切る",
     "default_icon": {
       "16": "icons/off/icon-16.png",
       "32": "icons/off/icon-32.png"
