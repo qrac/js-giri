@@ -12,13 +12,13 @@ function copyExtensionFiles() {
       const outputDirectory = resolve(rootDirectory, "dist");
       await mkdir(outputDirectory, { recursive: true });
       await Promise.all([
-        cp(resolve(rootDirectory, "manifest.json"), resolve(outputDirectory, "manifest.json")),
-        cp(resolve(rootDirectory, "icons"), resolve(outputDirectory, "icons"), { recursive: true }),
         cp(
-          resolve(rootDirectory, "src/rules"),
-          resolve(outputDirectory, "src/rules"),
-          { recursive: true },
+          resolve(rootDirectory, "manifest.json"),
+          resolve(outputDirectory, "manifest.json"),
         ),
+        cp(resolve(rootDirectory, "icons"), resolve(outputDirectory, "icons"), {
+          recursive: true,
+        }),
       ]);
     },
   };
@@ -41,4 +41,3 @@ export default defineConfig({
     },
   },
 });
-
