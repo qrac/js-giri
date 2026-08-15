@@ -1,0 +1,21 @@
+{
+  "name": "js-giri",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "node --test test/unit/*.test.js",
+    "test:e2e": "npm run build && node --test test/e2e/*.test.js",
+    "check": "tsc -p jsconfig.json --noEmit && npm run test:unit && npm run build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.4",
+    "@types/node": "^24.0.0",
+    "puppeteer": "^25.7.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.1"
+  }
+}
