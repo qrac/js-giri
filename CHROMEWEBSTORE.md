@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — JS斬り
 
-> Last Updated: 2026-08-14
+> Last Updated: 2026-08-15
 
 ## Store Listing
 
@@ -23,8 +23,7 @@ JS斬りは、現在表示しているサイトのJavaScriptをワンクリッ�
 | Asset | Dimensions | Status | Filename |
 | --- | --- | --- | --- |
 | Store Icon | 128×128 PNG | Ready | `icons/on/icon-128.png` |
-| Screenshot 1 | 1280×800 or 640×400 | Not created | Options page and a cut site |
-| Screenshot 2 | 1280×800 or 640×400 | Not created | Toolbar action states |
+| Screenshot 1 | 1280×800 PNG | Ready | `store-assets/screenshot-1.png` |
 
 ## Permissions Justification
 
@@ -58,7 +57,7 @@ JS斬りは、現在表示しているサイトのJavaScriptをワンクリッ�
 - [ ] 全permissionが実装に必要で、上記説明と一致することを確認する
 - [ ] `PRIVACY.md` を公開URLへ配置し、Dashboardの開示内容と一致させる
 - [ ] 16 / 48 / 128pxアイコンを実機で確認する
-- [ ] 1280×800または640×400の正確なスクリーンショットを1枚以上作る
+- [x] 1280×800または640×400の正確なスクリーンショットを1枚以上作る
 - [ ] Store descriptionと実装機能が一致することを確認する
 - [ ] `npm run check` と `npm test` を実行する
 - [ ] unpacked extensionを手動確認する
