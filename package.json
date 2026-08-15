@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build",
+    "build": "vite build && npm run package",
+    "package": "node scripts/package.js",
     "test": "npm run test:unit",
     "test:unit": "node --test test/unit/*.test.js",
     "check": "tsc -p jsconfig.json --noEmit && npm run test:unit && npm run build"
