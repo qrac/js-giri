@@ -1,8 +1,5 @@
 :root {
-  color: #2f2808;
-  background: #fffdf4;
-  font-family: system-ui, sans-serif;
-  font-size: 16px;
+  color-scheme: light dark;
 }
 
 body {
@@ -11,30 +8,17 @@ body {
 
 main {
   box-sizing: border-box;
-  width: min(100% - 32px, 720px);
-  margin: 48px auto;
-}
-
-h1 {
-  margin: 0 0 32px;
-  font-size: 2rem;
+  width: min(100% - 32px, 500px);
+  margin: 2rem auto;
 }
 
 section {
-  padding: 24px 0;
-  border-top: 1px solid #ded8bd;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: 1.125rem;
+  margin-block: 2rem;
 }
 
 #site-list,
 .plain-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-inline-start: 0;
 }
 
 #site-list li {
@@ -42,24 +26,8 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 44px;
-  border-bottom: 1px solid #eee9d6;
-}
-
-button {
-  min-width: 64px;
-  padding: 8px 14px;
-  border: 1px solid #2f2808;
-  border-radius: 6px;
-  color: inherit;
-  background: #ffdf54;
-  font: inherit;
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: wait;
-  opacity: 0.6;
+  padding: 0.5em 0;
+  border-bottom: 1px solid;
 }
 
 .plain-list li + li {
