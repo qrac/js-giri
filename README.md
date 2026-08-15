@@ -29,10 +29,8 @@ npm run build
 ```sh
 npm run dev       # dist を監視ビルド
 npm run check     # JSDoc 型チェック、Unit Test、build
-npm test          # Unit Test と Chromium E2E Test
+npm test          # Unit Test
 ```
-
-E2E Test は Puppeteer 同梱の Chromium にビルド済み拡張を読み込み、JavaScript の実行・遮断・解除と別ホスト名への非干渉を確認します。
 
 ## Permissions
 

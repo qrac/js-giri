@@ -54,7 +54,7 @@ chrome.contextMenus.onClicked.addListener((info) => {
   }
 });
 
-// 拡張自身の画面・E2Eから、action clickと同じ処理を呼べる内部メッセージ。
+// 拡張自身の画面から、action clickと同じ処理を呼べる内部メッセージ。
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message?.type !== "toggle-tab" || sender.id !== chrome.runtime.id) return false;
 
