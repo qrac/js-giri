@@ -19,13 +19,6 @@ const ICONS = {
 export async function updateActionForTab(tab) {
   if (tab.id === undefined) return;
 
-  // Without the tabs permission, URL is available only for tabs where Chrome
-  // has granted temporary access (for example, after an action click).
-  if (typeof tab.url !== "string") {
-    await chrome.action.enable(tab.id);
-    return;
-  }
-
   const hostname = getEligibleHostname(tab.url);
   const hostnames = hostname ? await getCutHostnames() : [];
   const isCut = hostname !== null && hostnames.includes(hostname);
@@ -40,9 +33,14 @@ export async function updateActionForTab(tab) {
           ? "このサイトのJavaScriptを切る"
           : "このページでは使用できません",
     }),
-    // Keep the action clickable even when the page is unsupported. Without
-    // tabs permission, disabling it could leave it disabled after navigation
-    // because the new URL may not be available to the extension.
-    chrome.action.enable(tab.id),
+    isCut || hostname
+      ? chrome.action.enable(tab.id)
+      : chrome.action.disable(tab.id),
   ]);
+}
+
+/** 全タブのaction状態を更新する。 */
+export async function updateAllActions() {
+  const tabs = await chrome.tabs.query({});
+  await Promise.all(tabs.map(updateActionForTab));
 }

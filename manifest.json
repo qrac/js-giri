@@ -1,15 +1,10 @@
 {
   "manifest_version": 3,
   "name": "JS切り",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "現在のサイトのJavaScriptをワンクリックで切ります。",
   "minimum_chrome_version": "120",
-  "permissions": [
-    "contentSettings",
-    "storage",
-    "activeTab",
-    "contextMenus"
-  ],
+  "permissions": ["contentSettings", "storage", "tabs", "contextMenus"],
   "background": {
     "service_worker": "src/background.js",
     "type": "module"
