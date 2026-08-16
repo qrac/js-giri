@@ -7,7 +7,7 @@
   "permissions": [
     "contentSettings",
     "storage",
-    "tabs",
+    "activeTab",
     "contextMenus"
   ],
   "background": {

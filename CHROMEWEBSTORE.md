@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — JS切り
 
-> Last Updated: 2026-08-15
+> Last Updated: 2026-08-16
 
 ## Store Listing
 
@@ -31,7 +31,7 @@ JS切りは、現在表示しているサイトのJavaScriptをワンクリッ�
 | --- | --- |
 | `contentSettings` | ユーザーがアイコンを押したホスト名のJavaScriptを無効化し、再操作または設定画面からその変更を削除するため。 |
 | `storage` | JS切り自身が無効化したhostnameだけを端末内で管理し、安全に解除するため。 |
-| `tabs` | タブ切り替え・ページ遷移時に現在のhostnameを確認し、タブごとのアイコン状態を正しく表示するため。ページ本文は読み取らない。 |
+| `activeTab` | ユーザーがツールバーアイコンを押した直後の現在タブURLを確認し、対象ホスト名のJavaScript切替を行うため。全タブのURLやページ本文は読み取らない。 |
 | `contextMenus` | 拡張アイコンの右クリックメニューに設定ページへの入口を1つ表示するため。 |
 
 `host_permissions` は使用しない。

@@ -38,7 +38,7 @@ npm test          # Unit Test
 | --- | --- |
 | `contentSettings` | ユーザー操作で、対象ホスト名の JavaScript 設定を block または削除するため |
 | `storage` | JS切り自身が block したホスト名だけを端末内に保存するため |
-| `tabs` | タブ切り替え・遷移時に URL のホスト名を確認し、タブごとのアイコンを更新するため |
+| `activeTab` | ツールバーアイコンのクリック時に、actionから渡された現在タブのURLを確認するため。全タブのURLは取得しない |
 | `contextMenus` | 拡張アイコンの右クリックに「設定」を1項目だけ表示するため |
 
 `host_permissions`、Content Script、外部通信は使用しません。保存するのは JS切り対象のホスト名だけで、パス、クエリ、ページタイトル、本文は保存しません。詳細は [PRIVACY.md](PRIVACY.md) を参照してください。
